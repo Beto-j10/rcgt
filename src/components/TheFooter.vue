@@ -39,7 +39,7 @@ import TheMainFooter from './TheMainFooter.vue';
             <div class="footer__copyright">
                 <span class="footer__text">Firme membre de :</span>
                 <a class="footer__logo" href="/" aria-label="Link to grantthornton global page">
-                    <img src="grant-thornton-logo.svg" alt="RCGT" loading="lazy" />
+                    <img src="../assets/grant-thornton-logo.svg" alt="RCGT" loading="lazy" />
                 </a>
                 <span
                     class="footer__text"
