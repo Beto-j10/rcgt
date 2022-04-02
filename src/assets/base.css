@@ -1,0 +1,146 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white     : #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black     : #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1 : rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2 : rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1 : var(--vt-c-white);
+  --vt-c-text-dark-2 : rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-white: #FFF;
+  --color-black: #000;
+
+  --color-background: #F4F4F4;
+  --color-background-dark: #6E6E6E;
+  --color-background-dark-soft: #E3E3E3;
+
+  --color-border      : #DBDBDB;
+  --color-border-light: #F4F4F4;
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text   : var(--vt-c-text-light-1);
+
+  --border-radius: 35px;
+
+  --text-color-dark          : #000;
+  --text-color-light         : #fff;
+  --text-color-mute          : #78757B;
+  --text-color-soft          : #BABBBD;
+  --text-color-secondary     : #7537CF;
+  --text-color-secondary-dark: #4F2D7F;
+
+  --line-height-paragraph: 1.55;
+
+  --section-gap: 160px;
+
+  --font-size-x-small  : 1.2rem;
+  --font-size-small    : 1.3rem;
+  --font-size-base     : 1.4rem;
+  --font-size-x-base   : 1.5rem;
+  --font-size-medium   : 1.6rem;
+  --font-size-large    : 1.8rem;
+  --font-size-x-large  : 2.0rem;
+  --font-size-x-larger : 2.1rem;
+  --font-size-xx-large : 2.5rem;
+  --font-size-xxx-large: 4.5rem;
+
+  --height-header: 80px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background     : var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border      : var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text   : var(--vt-c-text-dark-2);
+  }
+} */
+
+@font-face {
+  font-family : "GT Walsheim";
+  font-weight : 400;
+  font-style  : normal;
+  font-display: auto;
+  src         : url("/fonts/GT-Walsheim/GT-Walsheim-Regular-Trial.woff2") format("woff2");
+}
+
+@font-face {
+  font-family : "GT Walsheim";
+  font-weight : 700;
+  font-style  : normal;
+  font-display: auto;
+  src         : url("/fonts/GT-Walsheim/GT-Walsheim-Bold-Trial.woff2") format("woff2");
+}
+
+@font-face {
+  font-family : "GT Walsheim";
+  font-weight : 500;
+  font-style  : normal;
+  font-display: auto;
+  src         : url("/fonts/GT-Walsheim/GT-Walsheim-Medium-Trial.woff2") format("woff2");
+}
+
+@font-face {
+  font-family : "GT Walsheim";
+  font-weight : 300;
+  font-style  : normal;
+  font-display: auto;
+  src         : url("/fonts/GT-Walsheim/GT-Walsheim-Light-Trial.woff2") format("woff2");
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing : border-box;
+  margin     : 0;
+  position   : relative;
+  font-weight: normal;
+}
+
+p {
+  font-size  : var(--font-size-large);
+  line-height: var(--line-height-paragraph);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height             : 100vh;
+  color                  : var(--text-color-dark);
+  background             : var(--color-white);
+  transition             : color 0.5s, background-color 0.5s;
+  font-family            : 'GT Walsheim', Roboto, 'Helvetica Neue', sans-serif;
+  font-size              : var(--font-size-large);
+  text-rendering         : optimizeLegibility;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
