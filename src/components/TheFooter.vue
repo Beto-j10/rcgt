@@ -1,7 +1,7 @@
 <script setup>
 import IconMail from './icons/IconMail.vue';
 import IconPhone from './icons/IconPhone.vue';
-import TheMainFooter from './TheMainFooter.vue';
+import TheMenuFooter from './TheMenuFooter.vue';
 import IconGrantThornton from './icons/iconGrantThornton.vue';
 import VBarSocial from './VBarSocial.vue';
 
@@ -34,7 +34,7 @@ import VBarSocial from './VBarSocial.vue';
         <div class="footer__bottom">
             <div class="footer__nav">
                 <div class="footer__main">
-                    <TheMainFooter />
+                    <TheMenuFooter />
                 </div>
                 <div class="footer__social">
                     <a class="footer__nav-link" href="/">Notes légales</a>
