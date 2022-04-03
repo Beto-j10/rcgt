@@ -2,6 +2,7 @@
 import IconMail from './icons/IconMail.vue';
 import IconPhone from './icons/IconPhone.vue';
 import TheMainFooter from './TheMainFooter.vue';
+import IconGrantThornton from './icons/iconGrantThornton.vue';
 
 </script>
 
@@ -39,7 +40,7 @@ import TheMainFooter from './TheMainFooter.vue';
             <div class="footer__copyright">
                 <span class="footer__text">Firme membre de :</span>
                 <a class="footer__logo" href="/" aria-label="Link to grantthornton global page">
-                    <img src="../assets/grant-thornton-logo.svg" alt="RCGT" loading="lazy" />
+                    <IconGrantThornton />
                 </a>
                 <span
                     class="footer__text"
