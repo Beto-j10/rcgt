@@ -142,11 +142,16 @@ a {
     color: var(--text-color-soft);
 }
 
+.footer__sublist {
+    margin-top: 8px;
+}
+
 .footer__sublink {
     font-size: var(--font-size-base);
     color: var(--text-color-mute);
     transition: color 0.35s;
     font-weight: 500;
+    line-height: 1.8;
 }
 
 .footer__sublink:hover {

@@ -75,5 +75,26 @@ import IconYoutube from "./icons/iconYoutube.vue";
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    transition: all .3s;
+}
+
+@media (min-width: 980px) {
+
+    .nav__social {
+        width: fit-content;
+    }
+    .nav__social-link:hover {
+        background-color: var(--color-border-light);
+    }
+
+    .nav__social-link svg {
+        transition: fill .3s;
+    }
+
+    .nav__social-link:hover svg {
+        fill: var(--text-color-secondary);
+    }
 }
 </style>
