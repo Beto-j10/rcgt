@@ -35,7 +35,6 @@ import IconGrantThornton from './icons/iconGrantThornton.vue';
                 <div class="footer__main">
                     <TheMainFooter />
                 </div>
-                <!-- <a class="footer__nav-link" href="/">Notes légales</a> -->
             </div>
             <div class="footer__copyright">
                 <span class="footer__text">Firme membre de :</span>
