@@ -7,6 +7,7 @@ import TheButtonMenu from "./components/TheButtonMenu.vue";
 import TheMain from "./components/TheMain.vue";
 import TheMenu from "./components/TheMenu.vue";
 import TheFooter from "./components/TheFooter.vue";
+import TheNavHeader from "./components/TheNavHeader.vue";
 
 const activeMenu = ref(false);
 
@@ -44,6 +45,9 @@ function toggleMenu(e) {
             <div class="header__menu">
                 <a :class="[activeMenu ? 'header__language' : 'hidden']" href="/">en</a>
                 <TheButtonMenu @toggle-menu="toggleMenu" />
+            </div>
+            <div class="header__nav">
+                <TheNavHeader />
             </div>
         </header>
         <nav class="nav__mobile" id="nav-mobile" :class="{ 'nav__mobile--shrink': !activeMenu }">
@@ -154,6 +158,10 @@ function toggleMenu(e) {
     font-weight: 500;
 }
 
+.header__nav {
+    display: none;
+}
+
 .nav__mobile {
     grid-area: nav;
     position: absolute;
@@ -187,6 +195,16 @@ function toggleMenu(e) {
 @media (min-width: 481px) {
     .header__contact-btn {
         width: 180px;
+    }
+}
+
+@media (min-width: 1081px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__nav {
+        display: initial;
     }
 }
 </style>
