@@ -56,7 +56,6 @@ function toggleMenu(e) {
 
         <main class="main">
             <TheMain />
-            <aside class="sidebar">diebar</aside>
         </main>
         <footer class="footer">
             <TheFooter />
