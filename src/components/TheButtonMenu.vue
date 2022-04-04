@@ -1,7 +1,24 @@
 <script setup>
-import { ref } from 'vue';
+import { onUnmounted, ref } from 'vue';
 
+
+const emmit = defineEmits([
+    'toggleMenu',
+]);
 const activeMenu = ref(false);
+const mediaQuery = window.matchMedia('(min-width: 1081px)')
+
+function handleMediaQueryChange(e) {
+    if (e.matches) {
+        activeMenu.value = false;
+        emmit('toggleMenu', false);
+    }
+}
+mediaQuery.addEventListener('change', handleMediaQueryChange)
+
+onUnmounted(() => {
+    mediaQuery.removeEventListener('change', handleMediaQueryChange)
+})
 
 </script>
 
