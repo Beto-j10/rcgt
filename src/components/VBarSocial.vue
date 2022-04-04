@@ -84,6 +84,7 @@ import IconYoutube from "./icons/iconYoutube.vue";
 
     .nav__social {
         width: fit-content;
+        padding: 0;
     }
     .nav__social-link:hover {
         background-color: var(--color-border-light);
