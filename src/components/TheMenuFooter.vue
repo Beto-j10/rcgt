@@ -63,6 +63,10 @@ const itemsNav = [
                 link: "/",
             },
             {
+                title: "Grant Thornton International",
+                link: "/",
+            },
+            {
                 title: "Protection des données",
                 link: "/",
             },
