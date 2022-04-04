@@ -107,4 +107,11 @@ svg {
         height: 43px;
     }
 }
+
+@media (min-width: 1081px) {
+    svg {
+        width: 155px;
+        height: 39px;
+    }
+}
 </style>
